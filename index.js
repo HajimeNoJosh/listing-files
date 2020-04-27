@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-fs.readdir(".", (err, response) => {
+fs.readdir(process.cwd(), (err, response) => {
   if (err) {
     throw new Error(err);
   }
